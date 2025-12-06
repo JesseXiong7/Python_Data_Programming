@@ -1,0 +1,53 @@
+Project Name: Final Customer App
+
+Files:
+
+db.py:
+Handles SQLite database connection and customer table operations including creation, insertion, retrieval, update, deletion, and resetting ID sequences.
+
+business.py:
+Contains the application logic for managing customers. Validates inputs, calls database functions, and processes results for adding, listing, searching, removing, and updating customer records.
+
+ui.py:
+Provides a text-based user interface with a menu-driven system to interact with users. Displays options, receives user inputs, and shows formatted results and messages.
+
+Final.sqlite:
+The SQLite database file created automatically by the app to persistently store customer data.
+
+design.txt:
+This document describing the app’s design, file responsibilities, and overall structure.
+
+Description:
+
+This app enables users to:
+
+Add customers by entering name and email with validation.
+
+List all customers in a formatted table.
+
+Remove customers by their ID.
+
+Search customers by name or email keywords.
+
+Update customer email by ID.
+
+Exit the program gracefully.
+
+The app uses a layered architecture:
+
+Database Layer (db.py): Manages all direct database interactions ensuring persistent data storage and integrity.
+
+Business Layer (business.py): Applies validation and business rules, connecting UI with the database layer.
+
+User Interface Layer (ui.py): Handles user input/output through a command-line menu, guiding the user and displaying information clearly.
+
+Additional Notes:
+
+The app automatically creates the database and tables if they do not exist.
+
+The ID for customers auto-increments and can be reset when no records remain.
+
+Errors are handled gracefully with messages guiding the user.
+
+The design follows clean separation of concerns to facilitate maintenance and testing.
+

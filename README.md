@@ -1,4 +1,5 @@
 # Python Data Programming Final Project
+
 This repository contains my final project for the Python Data Programming course.  
 The project uses **Python modules**, **SQLite**, and a simple UI to simulate a small data system.
 
